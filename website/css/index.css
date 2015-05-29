@@ -1,4 +1,10 @@
 
+div {
+    height:200px;
+    width:500px;
+    display: inline-block;
+  
+}
 
 body {
    /* background-color: #b0c4de;*/
@@ -62,7 +68,7 @@ body {
   color: #fff;
   cursor: pointer;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   padding-bottom: 25px;
   padding-left: 25px;
   padding-top: 25px;
