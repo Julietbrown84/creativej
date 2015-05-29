@@ -1,1 +1,1 @@
-Im very arty and love design :)
+Working on front end, Javascript, css, and html.
