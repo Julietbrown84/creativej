@@ -40,7 +40,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
+h1 { position: absolute; font-size: 40px; font-family: 'Open Sans', sans-serif; }
 
 .menu li {
   border-bottom: 1px solid #636366;
