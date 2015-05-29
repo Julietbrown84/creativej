@@ -1,2 +1,2 @@
-Working on front end, Javascript, css, and html.
 
+This is a page dedicated towards exploring jQuery, html, css and the awesome things you can do with it. :)
