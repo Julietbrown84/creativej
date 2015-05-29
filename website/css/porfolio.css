@@ -1,9 +1,12 @@
-body{
-	background:#000;
-	color:#fff;
-	font-family: 'PT Sans Narrow', Arial, sans-serif;
-	text-transform:uppercase;
-}
+body {
+   /* background-color: #b0c4de;*/
+    height: 100%;
+    position: relative;
+    opacity: 0.9;
+    background-image: url('images/765-4-Black-Hole.gif');
+    background-size: 30px; }
+  }
+
 
 a{
 	color:#fff;
