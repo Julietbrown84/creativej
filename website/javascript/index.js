@@ -1,7 +1,10 @@
+
+
 $(window).ready(function() {
         $("h1").animate({top: '500px',right: '300px'});
        });
 
+// 
 
 var main = function() {
   /* Push the body and the nav over by 285px over */
@@ -15,7 +18,6 @@ var main = function() {
     }, 200);
   });
 
-  /* Then push them back */
   $('.icon-close').click(function() {
     $('.menu').animate({
       left: "-285px"

@@ -21,10 +21,11 @@ body {
     position: relative;
 }
 
-/* Initial menu */
+
+
 .menu {
-  background: #202024 url('http://www.thisiscolossal.com/wp-content/uploads/2013/01/3.gif') repeat left top;
-  left: -285px;  
+  background: #F8F8F8 url('') repeat left top;
+  left: -1285px;    
   height: 100%;
   position: fixed;
   width: 285px;
