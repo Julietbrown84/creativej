@@ -27,6 +27,7 @@ var main = function() {
     }, 200);
   });
 };
+
    function fallingSnow() {
     
         var snowflake = $('<div class="snowflakes"></div>');

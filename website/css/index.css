@@ -1,35 +1,4 @@
 
-div {
-    height:200px;
-    width:500px;
-    display: inline-block;
-  
-}
-
-body {
-   /* background-color: #b0c4de;*/
-    height: 100%;
-    position: relative;
-    opacity: 0.9;
-    background-image: url('http://g-ecx.images-amazon.com/images/G/01/dvd/lionsgate/AMOLD_extra_lg.jpg');
-  }
-
-  body {
-    left: 0;
-    margin: 0;
-    overflow: hidden;
-    position: relative;
-}
-
-
-
-.menu {
-  background: #F8F8F8 url('') repeat left top;
-  left: -1285px;    
-  height: 100%;
-  position: fixed;
-  width: 285px;
-}
 
 .snowflakes {
     top:0px;
@@ -40,52 +9,173 @@ body {
     height:10px;
     background:white;
   }
-
-
-.menu ul {
-  border-top: 1px solid #636366;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+ 
+#clouds {
+    padding: 100px 0;
 }
-h1 { position: absolute; font-size: 40px; font-family: 'Open Sans', sans-serif; }
-
-.menu li {
-  border-bottom: 1px solid #636366;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 45px;
-  padding-bottom: 3px;
-  padding-left: 20px;
-  padding-top: 3px;
+ 
+.cloud {
+    width: 200px;
+    height: 60px;
+    background: #fff;
+    border-radius: 200px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 200px;    
+    position: relative;
 }
 
-.menu a {
-  color: #fff;
-  font-size: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
+.cloud:before, .cloud:after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    background: #fff;
+    width: 100px;
+    height: 80px;
+     
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+     
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+}
+ 
+.cloud:after {
+    width: 120px; 
+    height: 120px;
+    top: -55px;
+    left: auto;
+    right: 15px;
+}
+ 
+.x1 {
+    -webkit-animation: moveclouds 15s linear infinite;
+    -moz-animation: moveclouds 15s linear infinite;
+}
+ 
+.x2 {
+    left: 200px;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    opacity: 0.6;
+    -webkit-animation: moveclouds 25s linear infinite;
+    -moz-animation: moveclouds 25s linear infinite;
+}
+ 
+.x3 {
+    left: -250px;
+    top: -200px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    opacity: 0.8;
+     
+    -webkit-animation: moveclouds 20s linear infinite;
+    -moz-animation: moveclouds 20s linear infinite;
+}
+ 
+.x4 {
+    left: 470px;
+    top: -250px;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    opacity: 0.75;
+    -webkit-animation: moveclouds 18s linear infinite;
+    -moz-animation: moveclouds 18s linear infinite;
+}
+ 
+.x5 {
+    left: -150px;
+    top: -150px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    opacity: 0.8;
+    -webkit-animation: moveclouds 20s linear infinite;
+    -moz-animation: moveclouds 20s linear infinite;
+}
+ 
+@-webkit-keyframes moveclouds {
+    0% { margin-left: 1000px;}
+    100% { margin-left: -1000px;}
+}
+ 
+@-moz-keyframes moveclouds {
+    0% { margin-left: 1000px;}
+    100% { margin-left: -1000px;}
+}
+ 
+@-webkit-keyframes fall {
+    to {margin-top:900px;}
+}
+ 
+@-moz-keyframes fall {
+    to {margin-top:900px;}
 }
 
-.icon-close {
-  cursor: pointer;
-  padding-left: 10px;
-  padding-top: 10px;
+
+body {
+    height: 100%;
+    position: relative;
+    opacity: 0.9;
+    background-image: url("http://g-ecx.images-amazon.com/images/G/01/dvd/lionsgate/AMOLD_extra_lg.jpg");
+   /* background-size: 2000px;*/
+   
 }
 
-.icon-menu {
-  color: #fff;
-  cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  padding-top: 25px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
+figure {
+        display:inline-block;
+        width:100px;
+        height:100px;
+        padding:10px;
+        margin-top: 250px;
+        box-shadow:inset -10px -60px rgba(0,0,0,.06);
+        -moz-border-radius:100px;
+        -webkit-border-radius:100px;
+        border-radius:50%;
+        animation:bobble 5s ease-in-out infinite;
+        transform-origin:center bottom;
+        transition:padding .3s, bottom .3s;
+        text-align:center;
+    }
 
+h1 { position: absolute;font-color: #000; font-size: 80px; font-family: 'Open Sans', sans-serif; }
 
+.eye {
+        display:inline-block;
+        width:10px;
+        height:20px;
+        margin:0 5px 5px;
+        background:rgba(0,0,0,.9);
+        border-radius:10px;
+        border-radius:50%;
+        animation:blink 4s ease-in-out infinite;
+    }
 
-.icon-menu i {
-  margin-right: 40px;
-}
+  @keyframes blink { 90% { transform:none; } 95% { transform:rotateX(90deg); } }
+    
+  
+    .mouth {
+        display:block;
+        width:100%;
+        height:10px;
+        margin:5px auto 0;
+        background:rgba(0,0,0,.9);
+        border-radius:10px 10px 100px 100px;
+        border-radius:10px 10px 50% 50%;
+        transition:border-radius .5s, height .5s cubic-bezier(.15,.60,.30,1.9);
+        line-height:0;
+        transform-origin:center top; 
+    }
+
+/* Behaviors =================================================== */ 
+   
+  .hyper { animation:hyper 2s infinite; }
+        @keyframes hyper {
+            25%{ transform:translateY(-80px); }
+            15%,50%{ transform:rotateX(40deg); }
+            75%{ transform:none; }
+        }
+  .hyper .mouth { height:40px; border-radius:-20px -20px 50% 50%; }
+
+   
