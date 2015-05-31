@@ -1,32 +1,8 @@
 
 
 $(window).ready(function() {
-        $("h1").animate({top: '500px',right: '300px'});
+        $("h1").animate({top: '300px',right: '300px'});
        });
-
-// 
-
-var main = function() {
-  $('.icon-menu').click(function() {
-    $('.menu').animate({
-      left: "0px"
-    }, 200);
-
-    $('body').animate({
-      left: "285px"
-    }, 200);
-  });
-
-  $('.icon-close').click(function() {
-    $('.menu').animate({
-      left: "-285px"
-    }, 200);
-
-    $('body').animate({
-      left: "0px"
-    }, 200);
-  });
-};
 
    function fallingSnow() {
     

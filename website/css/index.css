@@ -1,4 +1,4 @@
-
+html, body { position: fixed; height: 100%; width: 100%; }
 
 .snowflakes {
     top:0px;
@@ -139,7 +139,7 @@ figure {
         text-align:center;
     }
 
-h1 { position: absolute;font-color: #000; font-size: 80px; font-family: 'Open Sans', sans-serif; }
+h1 { position: absolute;font-color: #000;font-size: 80px; font-family: 'Open Sans', sans-serif; }
 
 .eye {
         display:inline-block;
