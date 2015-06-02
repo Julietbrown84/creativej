@@ -1,8 +1,23 @@
 .vanish {
-    height: 100px
-    width: 100px
+    height: 100px;
+    width: 100px;
     display: inline-block;
     background-color: black;
-
     border-radius: 5px;
+}
+
+div {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #FF9C5B;
+    display: inline-block;
+}
+
+.red {
+    background-color: #E84A5F;
+}
+
+.pink {
+    background-color: #FF847C;
 }
