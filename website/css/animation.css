@@ -13,7 +13,6 @@ div {
     background-color: #FF9C5B;
     display: inline-block;
 }
-
 .red {
     background-color: #E84A5F;
 }
@@ -21,3 +20,14 @@ div {
 .pink {
     background-color: #FF847C;
 }
+
+form {
+    font-size: 12px;
+    font-family: Verdana, Arial, Sans-Serif;
+    display: inline-block;
+}
+#messages {
+    font-size: 14px;
+  font-family: Garamond, Times, Serif;
+}
+
