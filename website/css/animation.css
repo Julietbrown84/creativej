@@ -40,7 +40,11 @@ nav {
     border:1px solid #ccc;
     margin-top:10px;
 }
-
+img {
+  position: relative;
+  left:0;
+  top: 0;
+}
 .active {
     background-color:#556677;
 }
